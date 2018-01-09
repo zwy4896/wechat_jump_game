@@ -80,10 +80,10 @@ def jump(distance):
         y1=swipe_y1,
         x2=swipe_x2,
         y2=swipe_y2,
-        duration=press_time-70
+        duration=press_time
     )
     print(cmd)
-    milsec = bytes(str(press_time - 50), encoding = "utf8");    #   这里的-50是经验值，可能会因舵机型号和质量不同略有差别（感谢wangshub大神的点拨^__^）
+    milsec = bytes(str(press_time-30), encoding = "utf8");    #   这里的-50是经验值，可能会因舵机型号和质量不同略有差别（感谢wangshub大神的点拨^__^）
     # os.system(cmd)
     return press_time
 
